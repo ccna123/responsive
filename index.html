@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-secondary font-lora text-slate-300 p-4 overflow-auto">
+    <!-- nav -->
+    <nav class="grid grid-cols-2 my-4 items-center">
+        <h1 class="text-2xl md:text-4xl">Cosmo Junkie</h1>
+        <ul class="flex justify-evenly md:text-xl gap-2">
+            <li><a href="#porfolio">Porfolio</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- end nav -->
+
+    <!-- hero -->
+    <section class="md:grid md:grid-cols-2 items-center">
+        <div>
+            <h2 class="text-2xl lg:text-6xl text-primary">Space Enthusiast<br/>& Javascript Developer</h2>
+            <p class="py-6 text-xl lg:text-3xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque ratione reprehenderit quisquam atque cum veritatis dicta quidem impedit sapiente minus vitae, tempora voluptatem quo ullam veniam iusto voluptates quos?</p>            
+            <a href="#porfolio" class="border-primary hover:bg-primary hover:text-[#222] border-2 inline-block uppercase bg-none px-4 py-1 rounded-full text-primary">View my work</a>
+        </div>
+        <div>
+            <img src="../imgs/banner_image.png" alt="planet">
+        </div>
+    </section>
+    <!-- end hero -->
+
+    <!-- project -->
+    <section id="porfolio">
+        <h3 class="text-primary text-center text-4xl my-4">Some Of My Projects</h3>
+        <div class="md:grid md:grid-cols-12 my-10 gap-4 bg-[url('../imgs/square_bg.png')] bg-cover bg-bottom bg-no-repeat ">
+            <div class="mx-auto text-center md:col-span-6 md:mb-0 mb-8 md:row-start-1 p-4 bg-white rounded-lg">
+                <a href="#" class="flex items-center">
+                    <img class="lg:max-w-[100%] max-w-[50%]" src="../imgs/project_1.png" alt="project1">
+                    <h4 class="text-gray-500">Space Race Game</h4>
+                </a>
+            </div>
+            <div class="mx-auto text-center md:col-span-6 md:row-start-1 md:mb-0 mb-8 py-4 bg-white rounded-lg">
+                <a href="#" class="flex items-center">
+                    <img class="lg:max-w-[100%] max-w-[50%]" src="../imgs/project_2.png" alt="project2">
+                    <h4 class="text-gray-500">Planet Boy API</h4>
+                </a>
+            </div>
+            <div class="mx-auto text-center lg:col-span-12 md:col-span-6 md:col-start-4 md:mb-0 mb-8 py-4 bg-white rounded-lg">
+                <a href="#" class="flex items-center">
+                    <img class="lg:max-w-[100%] max-w-[50%]" src="../imgs/project_3.png" alt="project3">
+                    <h4 class="text-gray-500">Captain Cosmo Blog</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- end project -->
+
+    <!-- skills -->
+    <section id="skill">
+        <h4 class="text-primary text-center text-4xl my-4">Things I Can Do</h4>
+        <ul class="grid grid-cols-2 md:grid-cols-4 items-center gap-2">
+            <li class="mx-auto p-4 bg-[rgba(0,0,0,0.2)]">
+                <img class="max-h-[40%]" src="../imgs/comet_1.svg" alt="skill1">
+                <h4>Javascript</h4>
+            </li>
+            <li class="mx-auto p-4 bg-[rgba(0,0,0,0.2)]">
+                <img class="max-h-[40%]" src="../imgs/comet_2.svg" alt="skill2">
+                <h4>React</h4>
+            </li>
+            <li class="mx-auto p-4 bg-[rgba(0,0,0,0.2)]">
+                <img class="max-h-[40%]" src="../imgs/comet_3.svg" alt="skill3">
+                <h4>Firebase</h4>
+            </li>
+            <li class="mx-auto p-4 bg-[rgba(0,0,0,0.2)]">
+                <img class="max-h-[40%]" src="../imgs/comet_4.svg" alt="skill4">
+                <h4>Flutter</h4>
+            </li>
+           
+        </ul>
+    </section>
+    <!-- end skills -->
+
+    <!-- contact -->
+    <section id="contact" class="bg-[#080936] my-10 pb-4">
+        <div class="text-center py-4">
+            <h4 class="text-primary text-4xl">Contact</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit, ipsam nesciunt aliquam mi</p>
+        </div>
+        <form class="w-[80%] max-w-[400px] mx-auto">
+            <input type="text" placeholder="Name" class="rounded-full my-2 text-white focus:outline-none w-full p-2 bg-[rgba(255,255,255,0.05)] border-[#9893D8] border-2">
+            <input type="email" placeholder="Email" class="rounded-full my-2 text-white w-full focus:outline-none p-2 bg-[rgba(255,255,255,0.05)] border-[#9893D8] border-2">
+            <textarea cols="30" rows="10" placeholder="Message" class="rounded-md my-2 text-white focus:outline-none w-full p-2 bg-[rgba(255,255,255,0.05)] border-[#9893D8] border-2"></textarea>
+            <button type="button" class="border-primary border-2 inline-block hover:bg-primary hover:text-[#222] uppercase bg-none px-4 py-1 rounded-full text-primary w-full">Send Message</button>
+        </form>
+    </section>
+    <!-- end contact -->
+
+    <!-- footer -->
+    <footer class="text-center">
+        <p class="text-xl">Copyright 2023 &copy;</p>
+        <ul class="flex justify-center items-center my-4 gap-4">
+            <li><a href="#"><img src="../imgs/icon_fb.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="../imgs/icon_tw.svg" alt="facebook"></a></li>
+        </ul>
+    </footer>
+    <!-- end footer -->
+</body>
+</html>
